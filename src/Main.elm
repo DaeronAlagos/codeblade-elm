@@ -130,8 +130,11 @@ viewFactionList =
 viewUnits : Model -> Element msg
 viewUnits model =
     row
-        [ paddingXY 10 20
+        [ paddingXY 40 20
         , spacing 10
+        , width fill
+        , clipX
+        , scrollbarX
         ]
     <|
         case model.faction of
