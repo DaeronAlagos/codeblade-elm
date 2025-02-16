@@ -166,7 +166,7 @@ viewUnit unit =
 
 viewCrew : Element msg
 viewCrew =
-    row [] [ text "Crew" ]
+    row [ paddingXY 40 20 ] [ text "Crew" ]
 
 
 factionToString : Faction -> String
