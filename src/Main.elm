@@ -116,12 +116,12 @@ viewFactionList : Element Msg
 viewFactionList =
     el
         [ paddingXY 0 20
-        , centerX
+        , width fill
         ]
         (wrappedRow
-            [ width fill
-            , padding 10
+            [ padding 10
             , spacing 20
+            , centerX
             ]
             (List.map viewFaction factions)
         )
